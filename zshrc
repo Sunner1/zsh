@@ -5,6 +5,9 @@ antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
+antigen bundle ruby
+antigen bundle python
+antigen bundle virtualenv
 antigen bundle command-not-found
 
 # Other
@@ -17,6 +20,7 @@ antigen theme robbyrussell
 antigen apply
 
 # Other configuration
+PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%d> %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%}'
 
 export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/sunner/.rvm/bin:/home/sunner/Bin:/home/sunner/.rvm/bin"
 # RVM shit
