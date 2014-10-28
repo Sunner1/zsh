@@ -1,0 +1,38 @@
+source ~/.zsh/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle command-not-found
+
+# Other
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Antigen theme
+antigen theme robbyrussell
+
+# Antigen done
+antigen apply
+
+# Other configuration
+
+export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/sunner/.rvm/bin:/home/sunner/Bin:/home/sunner/.rvm/bin"
+# RVM shit
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias pvalidate='puppet parser validate'
+alias pgenerate='puppet module generate --skip-interview'
+alias pminstall='puppet module install'
+alias puppet-lint='puppet-lint --no-80chars-check --no-class_inherits_from_params_class-check --no-autoloader_layout-check'
+alias sshkey-rm='ssh-keygen -f "/home/sunner/.ssh/known_hosts" -R'
+alias erbout="erb -P -x -T '-'"
+alias plint_all='for i in `ls -1 *.pp`; do echo File $i; puppet-lint $i; done'
+alias pval_all='for i in `ls -1 *.pp`; do echo File $i; puppet parser validate $i; done'
+
+setopt BEEP NO_AUTOLIST BASH_AUTOLIST NO_MENUCOMPLETE
