@@ -1,8 +1,4 @@
 source ~/.zsh/antigen/antigen.zsh
-# Custom crap
-source ~/.zsh/custom.zsh
-
-CASE_SENSITIVE="true"
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -24,6 +20,7 @@ antigen apply
 
 # Other configuration
 PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%d> %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%}'
+unsetopt cdablevars
 
 export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/sunner/.rvm/bin:/home/sunner/Bin:/home/sunner/.rvm/bin"
 # RVM shit
