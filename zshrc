@@ -1,4 +1,8 @@
 source ~/.zsh/antigen/antigen.zsh
+# Custom crap
+source ~/.zsh/custom.zsh
+
+CASE_SENSITIVE="true"
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -8,7 +12,6 @@ antigen bundle git
 antigen bundle ruby
 antigen bundle python
 antigen bundle virtualenv
-antigen bundle command-not-found
 
 # Other
 antigen bundle zsh-users/zsh-syntax-highlighting
