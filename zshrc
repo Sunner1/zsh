@@ -1,6 +1,7 @@
 source ~/.zsh/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
+CASE_SENSITIVE="true"
 antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
@@ -22,6 +23,7 @@ antigen apply
 # Other configuration
 PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%d> %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%}'
 unsetopt cdablevars
+unsetopt autocd
 
 export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/sunner/.rvm/bin:/home/sunner/Bin:/home/sunner/.rvm/bin"
 # RVM shit
