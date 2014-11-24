@@ -22,8 +22,9 @@ antigen apply
 
 # Other configuration
 PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%d> %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%}'
-unsetopt cdablevars
-unsetopt autocd
+setopt nocdablevars
+setopt noautocd
+setopt nosharehistory
 
 export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/sunner/.rvm/bin:/home/sunner/Bin:/home/sunner/.rvm/bin"
 # RVM shit
