@@ -44,3 +44,5 @@ alias plint_all='for i in `ls -1 *.pp`; do echo File $i; puppet-lint $i; done'
 alias pval_all='for i in `ls -1 *.pp`; do echo File $i; puppet parser validate $i; done'
 
 setopt BEEP NO_AUTOLIST BASH_AUTOLIST NO_MENUCOMPLETE
+
+alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
