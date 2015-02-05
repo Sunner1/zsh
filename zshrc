@@ -1,5 +1,9 @@
 source ~/.zsh/antigen/antigen.zsh
 
+# Python
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
 # Load the oh-my-zsh's library.
 CASE_SENSITIVE="true"
 antigen use oh-my-zsh
@@ -22,6 +26,7 @@ antigen apply
 
 # Other configuration
 PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%d> %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%}'
+[[ -n $VIRTUAL_ENV ]] && RPROMPT='%{$fg[green]%}$(basename $VIRTUAL_ENV)%'
 setopt nocdablevars
 setopt noautocd
 setopt nosharehistory
