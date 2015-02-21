@@ -2,7 +2,7 @@ source ~/.zsh/antigen/antigen.zsh
 
 # Python
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+source ~/.virtualenvs/virtualenvwrapper.sh
 
 # Load the oh-my-zsh's library.
 CASE_SENSITIVE="true"
