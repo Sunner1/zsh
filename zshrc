@@ -17,6 +17,7 @@ antigen bundle vagrant
 
 # Other
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle bobthecow/git-flow-completion
 
 # Antigen theme
 antigen theme robbyrussell
