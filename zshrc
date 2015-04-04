@@ -31,6 +31,8 @@ PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%d> %{$fg_bold[blue]%}$(
 setopt nocdablevars
 setopt noautocd
 setopt nosharehistory
+setopt autolist
+unsetopt menucomplete
 
 export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/sunner/.rvm/bin:/home/sunner/Bin:/home/sunner/.rvm/bin"
 # RVM shit
