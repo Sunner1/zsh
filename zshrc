@@ -1,5 +1,6 @@
 source ~/.zsh/antigen/antigen.zsh
 
+export TERM=xterm-256color
 # Python
 export WORKON_HOME=$HOME/.virtualenvs
 source ~/.virtualenvs/virtualenvwrapper.sh
@@ -34,7 +35,7 @@ setopt nosharehistory
 setopt autolist
 unsetopt menucomplete
 
-export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/sunner/.rvm/bin:/home/sunner/Bin:/home/sunner/.rvm/bin"
+export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:~/Bin:~/.rvm/bin"
 # RVM shit
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
