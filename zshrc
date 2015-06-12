@@ -52,6 +52,8 @@ alias erbout="erb -P -x -T '-'"
 alias plint_all='for i in `ls -1 *.pp`; do echo File $i; puppet-lint $i; done'
 alias pval_all='for i in `ls -1 *.pp`; do echo File $i; puppet parser validate $i; done'
 
+alias cc_search="egrep '(^|[[:space:]])[456][[:digit:]]{3}((-|[[:space:]])?[[:digit:]]{4}){3}([[:space:]]|$)'"
+
 setopt BEEP NO_AUTOLIST BASH_AUTOLIST NO_MENUCOMPLETE
 
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
