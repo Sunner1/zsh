@@ -40,20 +40,22 @@ export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/loc
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Puppet stuff
 alias pvalidate='puppet parser validate'
 alias pgenerate='puppet module generate --skip-interview'
 alias pminstall='puppet module install'
 alias puppet-lint='puppet-lint --no-80chars-check --no-class_inherits_from_params_class-check --no-autoloader_layout-check'
-alias sshkey-rm='ssh-keygen -f "/home/sunner/.ssh/known_hosts" -R'
 alias erbout="erb -P -x -T '-'"
 alias plint_all='for i in `ls -1 *.pp`; do echo File $i; puppet-lint $i; done'
 alias pval_all='for i in `ls -1 *.pp`; do echo File $i; puppet parser validate $i; done'
 
+# Misc
 alias cc_search="egrep '(^|[[:space:]])[456][[:digit:]]{3}((-|[[:space:]])?[[:digit:]]{4}){3}([[:space:]]|$)'"
 
-setopt BEEP NO_AUTOLIST BASH_AUTOLIST NO_MENUCOMPLETE
+# Laziness stuff
+alias mkdatedir='mkdir $(date +%Y-%m-%d)'
+alias sshkey-rm='ssh-keygen -f "/home/sunner/.ssh/known_hosts" -R'
+
+setopt BEEP BASH_AUTOLIST NO_MENUCOMPLETE
 
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
