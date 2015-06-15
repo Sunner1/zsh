@@ -5,8 +5,10 @@ export TERM=xterm-256color
 export WORKON_HOME=$HOME/.virtualenvs
 source ~/.virtualenvs/virtualenvwrapper.sh
 
-# Load the oh-my-zsh's library.
+# Fix stupid zsh stuff
 CASE_SENSITIVE="true"
+
+# Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
