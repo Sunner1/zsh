@@ -41,6 +41,16 @@ export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/loc
 # RVM shit
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+# OS specific stuff
+if [ "$(uname)" = "Darwin" ]
+then
+    alias vi='vim'
+    eval "$(pyenv init -)"
+
+elif [ "$(uname)" = "Linux" ]
+then
+fi
+
 
 # Puppet stuff
 alias pvalidate='puppet parser validate'
