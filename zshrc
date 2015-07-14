@@ -49,6 +49,9 @@ then
 
 elif [ "$(uname)" = "Linux" ]
 then
+    export PATH="$HOME/.pyenv/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
 fi
 
 
