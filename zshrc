@@ -68,6 +68,7 @@ alias pval_all='for i in `ls -1 *.pp`; do echo File $i; puppet parser validate $
 
 # Misc
 alias cc_search="egrep '(^|[[:space:]])[456][[:digit:]]{3}((-|[[:space:]])?[[:digit:]]{4}){3}([[:space:]]|$)'"
+source ~/.zsh/getsshagent.sh
 
 # Laziness stuff
 alias mkdatedir='mkdir $(date +%Y-%m-%d)'
