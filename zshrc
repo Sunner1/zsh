@@ -7,6 +7,7 @@ source ~/.virtualenvs/virtualenvwrapper.sh
 
 # Fix stupid zsh stuff
 CASE_SENSITIVE="true"
+setopt BEEP BASH_AUTOLIST NO_MENUCOMPLETE
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -69,11 +70,10 @@ alias pval_all='for i in `ls -1 *.pp`; do echo File $i; puppet parser validate $
 # Misc
 alias cc_search="egrep '(^|[[:space:]])[456][[:digit:]]{3}((-|[[:space:]])?[[:digit:]]{4}){3}([[:space:]]|$)'"
 source ~/.zsh/getsshagent.sh
+source ~/.zprofile
 
 # Laziness stuff
 alias mkdatedir='mkdir $(date +%Y-%m-%d)'
-alias sshkey-rm='ssh-keygen -f "/home/sunner/.ssh/known_hosts" -R'
 
-setopt BEEP BASH_AUTOLIST NO_MENUCOMPLETE
 
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
