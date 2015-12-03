@@ -18,6 +18,7 @@ antigen bundle ruby
 antigen bundle python
 antigen bundle virtualenv
 antigen bundle vagrant
+antigen bundle pyenv
 
 # Other
 antigen bundle zsh-users/zsh-syntax-highlighting
