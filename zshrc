@@ -18,6 +18,7 @@ antigen bundle ruby
 antigen bundle python
 antigen bundle virtualenv
 antigen bundle vagrant
+antigen bundle pyenv
 
 # Other
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -37,7 +38,7 @@ setopt nosharehistory
 setopt autolist
 unsetopt menucomplete
 
-export PATH="/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:$HOME/Bin:$HOME/.rvm/bin"
+export PATH="$HOME/.rvm/bin/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:$HOME/Bin"
 # RVM shit
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
