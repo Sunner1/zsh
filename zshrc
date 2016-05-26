@@ -3,7 +3,7 @@ source ~/.zsh/antigen/antigen.zsh
 export TERM=xterm-256color
 # Python
 export WORKON_HOME=$HOME/.virtualenvs
-source ~/.virtualenvs/virtualenvwrapper.sh
+#source ~/.virtualenvs/virtualenvwrapper.sh
 
 # Fix stupid zsh stuff
 CASE_SENSITIVE="true"
@@ -74,6 +74,7 @@ source ~/.zprofile
 
 # Laziness stuff
 alias mkdatedir='mkdir $(date +%Y-%m-%d)'
+alias cddatedir='cd $(date +%Y-%m-%d)'
 
 
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
