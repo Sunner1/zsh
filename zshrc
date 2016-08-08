@@ -79,3 +79,8 @@ alias cddatedir='cd $(date +%Y-%m-%d)'
 
 
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
+
+function xrpm() {
+    rpm2cpio $1 | cpio -idmv
+}
+
