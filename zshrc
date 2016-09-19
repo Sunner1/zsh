@@ -38,12 +38,15 @@ setopt nosharehistory
 setopt autolist
 unsetopt menucomplete
 
-export PATH="$HOME/.rvm/bin/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:$HOME/Bin"
+export PATH="$HOME/.rvm/bin:/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:$HOME/Bin"
 # RVM shit
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Python stuff
 [[ -n $VIRTUAL_ENV ]] && RPROMPT='%{$fg[green]%}$(basename $VIRTUAL_ENV)%'
+export PYTHON_CONFIGURE_OPTS="--enable-shared"
+
+source ~/.pyenv/completions/pyenv.zsh
 
 # OS specific stuff
 if [ "$(uname)" = "Darwin" ]
