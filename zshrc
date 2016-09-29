@@ -38,7 +38,7 @@ setopt nosharehistory
 setopt autolist
 unsetopt menucomplete
 
-export PATH="$HOME/.rvm/bin:/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:$HOME/Bin"
+export PATH="$HOME/.rvm/bin:/opt/java/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:$HOME/Bin:/usr/local/sbin"
 # RVM shit
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
